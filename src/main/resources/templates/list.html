@@ -15,12 +15,48 @@
 <a class="btn btn-primary btn-lg" role="button" href="/add">Add Food</a><br />
 
 
-<div th:each="image : ${images}">
-    <div th:if="${image.foodimg} != null">
-        <img th:src="${image.foodimg}" /><hr />
-        <p th:text="${image.name}"></p>
+<!--    <div class="card" style="width: 18rem;">-->
+<!--        <img src="..." class="card-img-top" alt="...">-->
+<!--        <div class="card-body">-->
+<!--            &lt;!&ndash;        <h5 class="card-title">//img </h5>&ndash;&gt;-->
+<!--            <p class="card-text">//name</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    -->
+
+<!--            <div th:each="image : ${images}" class="card" style="width: 18rem;">-->
+<!--&lt;!&ndash;                <div class="block">&ndash;&gt;-->
+<!--                    <div th:if="${image.foodimg} != null">-->
+<!--                      &lt;!&ndash;  <div class="card" ">&ndash;&gt;-->
+<!--                            <img class="card-img-top imgresize" th:src="${image.foodimg}"/>-->
+<!--                            <hr/>-->
+<!--                            <div class="card-body">-->
+<!--                                &lt;!&ndash;            <h5 class="card-title"></h5>&ndash;&gt;-->
+<!--                                <p class="card-text" th:text="${image.name}"></p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<div class="row">
+    <div th:each="image : ${images}" class="card" style="max-width: 18rem;">
+        <img class="card-img-top imgresize" th:src="${image.foodimg}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text" th:text="${image.name}">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
     </div>
 </div>
+       <!-- </div>-->
+<!--    <div th:each="image : ${images}">-->
+<!--    <div th:if="${image.foodimg} != null">-->
+<!--        <img th:src="${image.foodimg}" /><hr />-->
+<!--        <p th:text="${image.name}"></p>-->
+<!--    </div>-->
+<!--</div>-->
 
 
 
