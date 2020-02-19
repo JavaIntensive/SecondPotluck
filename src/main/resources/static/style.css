@@ -1,0 +1,18 @@
+
+body {
+    background-color: aquamarine;
+}
+textarea {
+    background-color: aqua;
+}
+th {
+    font-family: cursive, sans-serif;
+}
+input {
+    background-color: aqua;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}

@@ -33,7 +33,9 @@ public class Image {
         return foodimg;
     }
 
-    public void setFoodimg(String headshot) {
-        this.foodimg = headshot;
+    public void setFoodimg(String foodimg) {
+        this.foodimg = foodimg;
     }
 }
+
+
