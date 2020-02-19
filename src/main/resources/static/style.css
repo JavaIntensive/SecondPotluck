@@ -1,47 +1,21 @@
-
-/*body {*/
-/*    background-color: aquamarine;*/
-/*}*/
-/*textarea {*/
-/*    background-color: aqua;*/
-/*}*/
-/*th {*/
-/*    font-family: cursive, sans-serif;*/
-/*}*/
-/*input {*/
-/*    background-color: aqua;*/
-/*}*/
-
-/*img {*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*}*/
-/*body, html {*/
-/*    height: 100%;*/
-/*}*/
-.bg {
-    /* The image used */
-    background-image: url("https://images.unsplash.com/photo-1503011994592-d30eb1ef61dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1295&q=80");
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/*#card-arrangement {*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*    justify-content: space-around;*/
-/*}*/
-
 .imgresize {
      height: 200px;
      width: 200px;
  }
 
-/*.card {*/
-/*    border: 2px solid black;*/
-/*}*/
+body {
+  /*  background: url(images/bg.jpg) no-repeat center center fixed;*/
+    background: url("https://images.unsplash.com/photo-1503011994592-d30eb1ef61dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1295&q=80")
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.card{
+   margin: 10px;
+
+}
+
