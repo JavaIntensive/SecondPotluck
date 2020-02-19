@@ -4,11 +4,9 @@ import com.cloudinary.utils.ObjectUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.validation.Valid;
 import java.io.IOException;
 import java.util.Map;
 
@@ -30,7 +28,7 @@ public class HomeController {
     @GetMapping("/add")
     public String messageForm(Model model){
         model.addAttribute("image", new Image());
-        return "messageform";
+        return "foodform";
     }
 
     @PostMapping("/add")
@@ -50,4 +48,8 @@ public class HomeController {
         }
      return "redirect:/" ;}
 
+    @RequestMapping("/author")
+    public String authorPage(){
+        return "author";
+    }
 }
