@@ -8,21 +8,26 @@
 </head>
 <body>
 <div class="container">
-<h1>Potluck Form</h1>
-</div>
+<h1 style="text-align: center";>Potluck Form</h1>
 
-</div>
 <br /><br />
-<h1>File Image</h1>
-<form method="POST" action="/add" th:object="${image}"
-      enctype="multipart/form-data">
-    Name: <input type="text" th:field="*{name}" />
-    <br>
-<!--    Real Name: <input type="text" th:field="*{foodimg}" />-->
-    <input type="file" name="file" /><br /><br />
-    <input type="submit" value="Submit" />
-</form>
 
+<div class="upload">
+   <!-- <h3 class="fileimage">File Image</h3><br>-->
+    <form method="POST" action="/add" th:object="${image}"
+          enctype="multipart/form-data">
+        <div class="flx-tags">
+        <h3>Name:</h3> <input type="text" th:field="*{name}" />
+        </div>
+    <!--    Real Name: <input type="text" th:field="*{foodimg}" />-->
+        <div class="flx-tags">
+        <h3>File Image:</h3>
+            <input type="file" name="file" /><br /><br />
+
+        </div>
+        <input type="submit" value="Submit" />
+    </form>
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
